@@ -16,12 +16,23 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
+          // IconButton(
+          //   icon: Icon(Icons.menu),
+          //   tooltip: 'Navigation menu',
+          //   onPressed: null, // null disables the button
+          // ),
+          // // Expanded expands its child to fill the available space.
+          // IconButton(
+          //   icon: Icon(Icons.search),
+          //   tooltip: 'Search',
+          //   onPressed: null,
+          // ),
           BottomNavItem(
             title: "Reservation",
             svgScr: "assets/icons/calendar.svg",
           ),
           BottomNavItem(
-            title: "vehicle dispatching",
+            title: "dispatching",
             svgScr: "assets/icons/ambulance.svg",
             isActive: true,
           ),
