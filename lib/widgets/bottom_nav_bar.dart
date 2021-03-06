@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_app/constants.dart';
 
+
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     Key key,
@@ -16,30 +17,35 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          // IconButton(
-          //   icon: Icon(Icons.menu),
-          //   tooltip: 'Navigation menu',
-          //   onPressed: null, // null disables the button
+          IconButton(
+            icon: Icon(Icons.date_range_outlined),
+            tooltip: 'Reservation',
+            onPressed: null, // null disables the button
+          ),
+          // Expanded expands its child to fill the available space.
+          IconButton(
+            icon: Icon(Icons.directions_bus_outlined),
+            tooltip: 'Ambulance',
+            onPressed: null,
+          ),
+          IconButton(
+            icon: Icon(Icons.bar_chart),
+            tooltip: 'Search',
+            onPressed: null,
+          ),
+          // BottomNavItem(
+          //   title: "Reservation",
+          //   svgScr: "assets/icons/calendar.svg",
           // ),
-          // // Expanded expands its child to fill the available space.
-          // IconButton(
-          //   icon: Icon(Icons.search),
-          //   tooltip: 'Search',
-          //   onPressed: null,
+          // BottomNavItem(
+          //   title: "dispatching",
+          //   svgScr: "assets/icons/ambulance.svg",
+          //   isActive: true,
           // ),
-          BottomNavItem(
-            title: "Reservation",
-            svgScr: "assets/icons/calendar.svg",
-          ),
-          BottomNavItem(
-            title: "dispatching",
-            svgScr: "assets/icons/ambulance.svg",
-            isActive: true,
-          ),
-          BottomNavItem(
-            title: "Chart",
-            svgScr: "assets/icons/search.svg",
-          ),
+          // BottomNavItem(
+          //   title: "Chart",
+          //   svgScr: "assets/icons/search.svg",
+          // ),
         ],
       ),
     );
